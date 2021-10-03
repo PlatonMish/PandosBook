@@ -1,0 +1,14 @@
+import numpy as np
+
+# will use a lot in examples
+randn = np.random.randn
+
+# from pandas import *
+
+s = Series(randn(5), index=['a', 'b', 'c', 'd', 'e'])
+s.index
+Series(randn(5))
+d = {'a': 0., 'b': 1., 'c': 2.}
+Series(d)
+Series(d, index=['b', 'c', 'd', 'a'])
+Series(5., index=['a', 'b', 'c', 'd', 'e'])
